@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayuk Sengupta</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d9bafc4537.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background: #080808;
+            color: #ffffff;
+        }
+
+        *{
+             margin: 0px;
+             padding: 0px;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 60px;
+            text-align: center;
+        }
+        .files{
+            display: flex;
+            justify-content: center;
+        }
+        .pdfs{
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: space-evenly;
+        }
+        .javaPdfs{
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: space-evenly;
+        }
+        #btn{
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    .Downbtn a {
+            text-decoration: none;
+            color: #3e21a7;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Codes</h2>
+    <div class="files">
+        <div class="javaPdfs pdfs">
+            All School Java programs
+            <button class="Downbtn"><a href="assets/all.pdf" download>Download</a></button>
+        </div>
+        <div class="pdfs">
+            Python Programs (turtle)
+            <button class="Downbtn"><a href="assets/python_turtle.zip" download>Download</a></button>
+        </div>
+    </div>
+    <div class="back">
+        <a href="index.html">Go back</a>
+    </div>
+</body>
+</html>
