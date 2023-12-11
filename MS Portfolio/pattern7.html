@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <title>pattern7</title>
+    <style>
+        .patt7{
+            font-size: 15px;
+            /* border: 5px solid purple; */
+            width: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <pre><code class="language-java patt7">
+
+public class pattern {
+    public static void main(String[] args) {
+        int numberOfRows = 5;
+        for (int i = 1; i <= numberOfRows; i++) {
+
+            // Add spaces before the asterisks
+            for (int j = 1; j <= numberOfRows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Add asterisks
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+
+            // Move to the next line for the next row
+            System.out.println();
+        }
+        int numOfRows = 4;
+        for (int i = numOfRows; i >= 1; i--) {
+            System.out.print(" ");
+            // Add spaces before the asterisks
+            for (int j = 0; j < numOfRows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Add asterisks
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+
+            // Move to the next line for the next row
+            System.out.println();
+        }
+    }
+                }
+            </code></pre>
+
+            <div class="back">
+                <a href="pattern7.html">Go back</a>
+            </div>
+
+    <script src="prism.js"></script>
+</body>
+</html>

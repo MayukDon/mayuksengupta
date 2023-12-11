@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayuk Sengupta</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="prism.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d9bafc4537.js" crossorigin="anonymous"></script>
     <style>
-        body{
+        body {
             background: #080808;
             color: #ffffff;
         }
 
-        *{
-             margin: 0px;
-             padding: 0px;
+        * {
+            margin: 0px;
+            padding: 0px;
             font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
         }
-        h2{
+
+        h2 {
             font-size: 60px;
             text-align: center;
         }
-        .files{
+
+        .files {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
-        .pdfs{
-            height: 200px;
+
+        .pdfs {
+            height: 250px;
             width: 200px;
             border: 2px solid white;
             margin: 20px;
@@ -39,8 +45,9 @@
             font-size: 20px;
             justify-content: space-evenly;
         }
-        .javaPdfs{
-            height: 200px;
+
+        .javaPdfs {
+            height: 250px;
             width: 200px;
             border: 2px solid white;
             margin: 20px;
@@ -51,17 +58,24 @@
             font-size: 20px;
             justify-content: space-evenly;
         }
-        #btn{
+
+        #btn {
             padding: 5px;
             border-radius: 5px;
             text-align: center;
         }
-    .Downbtn a {
+
+        .Downbtn a {
             text-decoration: none;
             color: #3e21a7;
         }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255)
+        }
     </style>
 </head>
+
 <body>
     <h2>My Codes</h2>
     <div class="files">
@@ -73,9 +87,28 @@
             Python Programs (turtle)
             <button class="Downbtn"><a href="assets/python_turtle.zip" download>Download</a></button>
         </div>
+        <div class="pdfs javaPdfs" style="font-size: 15px;">
+            This pattern 
+            <pre>
+                *
+               ***
+              *****
+             *******
+            *********
+             *******
+              *****
+               ***
+                *
+            </pre>
+        <button class="Downbtn"><a href="pattern7.html">See Code</a></button>
+        <button class="Downbtn"><a href="assets/pattern7.pdf" download>Download</a></button>
+        </div>
     </div>
     <div class="back">
         <a href="index.html">Go back</a>
     </div>
+
+    <script src="prism.js"></script>
 </body>
+
 </html>
